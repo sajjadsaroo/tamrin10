@@ -14,6 +14,7 @@ public class CustomArrayList<T> implements List<T> {
         this.size = 0;
     }
 
+
     private void ensureCapacity() {
         if (size == elements.length) {
             elements = Arrays.copyOf(elements, elements.length * 2);
